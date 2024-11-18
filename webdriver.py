@@ -64,6 +64,6 @@ def login(phone_number, password):
 
 
 # Call login function
-phone_number = "0741962080"  # Replace with your Betika phone number
-password = "kipruto030"  # Replace with your Betika password
+phone_number = "your phone number"  # Replace with your Betika phone number
+password = "your password"  # Replace with your Betika password
 login(phone_number, password)
