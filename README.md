@@ -31,29 +31,40 @@ A Python script to automate login, extract round history from the Aviator game o
    ```bash
    pip install selenium playsound
 Download ChromeDriver:
+
 Match the version to your Chrome browser.
+
 Add the chromedriver file to your system PATH or provide its path in the script:
 python
 
 driver = webdriver.Chrome(executable_path="path/to/chromedriver")
+
 Update the script with your Betika login details:
-python
 
 phone_input.send_keys("your phone number")  # Replace with your phone number
+
 password_input.send_keys("your password")  # Replace with your password
+
 How to Use
 Run the script:
 bash
 
 python aviator_scraper.py
 Log in automatically using your credentials.
+
 Manually navigate to the Aviator game after logging in.
+
 Let the script extract payout data and save it in the SQLite database (aviator_rounds35_1.db).
+
 If no data is detected for 3 minutes, the script will play an alert sound.
+
 Notes
 Ensure that ChromeDriver is correctly installed and matches your Chrome version.
+
 The SQLite database (aviator_rounds35_1.db) will be created in the same directory as the script.
+
 The alert sound file path (extractionfail.wav) may need to be updated.
+
 License
 This project is licensed under the MIT License. Feel free to use and modify it.
 
